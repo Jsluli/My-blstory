@@ -9,10 +9,15 @@
 </head>
 <body>
 
-<audio id="bgm" autoplay loop>
-    <source src="./bgm.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+<audio id="bgm" loop>
+  <source src="bgm.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  document.addEventListener("click", function () {
+    document.getElementById("bgm").play();
+  }, { once: true });
+</script>
 
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Luca shu.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Luca shu" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="E451983B-7E60-45FC-8AF3-B7D674462EDD" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"><audio autoplay loop>
