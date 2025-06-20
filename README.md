@@ -9,19 +9,14 @@
 </head>
 <body>
 
-<audio id="bgm" controls>
+<audio id="bgm" loop>
   <source src="bgm.mp3" type="audio/mpeg">
-  您的瀏覽器不支援音訊播放。
 </audio>
 
-<button onclick="toggleLoop()">切換循環播放</button>
-
 <script>
-  function toggleLoop() {
-    const bgm = document.getElementById("bgm");
-    bgm.loop = !bgm.loop;
-    alert("循環播放目前狀態：" + (bgm.loop ? "開啟" : "關閉"));
-  }
+  document.addEventListener("click", function () {
+    document.getElementById("bgm").play();
+  }, { once: true });
 </script>
 
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Luca shu.</tw-noscript></noscript></tw-story>
