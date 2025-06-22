@@ -9,9 +9,10 @@
 </head>
 <body>
 
-<!<audio id="bgm" loop>
+<!--<audio id="bgm" loop>
   <source src="bgm.mp3" type="audio/mpeg">
-</audio>>
+</audio>
+-->
 
 <script>
   document.addEventListener("click", function () {
